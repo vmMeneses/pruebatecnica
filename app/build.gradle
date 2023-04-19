@@ -36,6 +36,12 @@ android {
     }
 }
 
+def glide_version = "4.11.0"
+def retrofit_version = "2.9.0"
+def lifecycle_version = "2.5.1"
+def volley_version = "1.2.1"
+def gson_version = "2.10.1"
+
 dependencies {
 
     implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.4.32'
@@ -55,5 +61,32 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.10.1'
     //Karumi Dexter
     implementation 'com.karumi:dexter:6.2.3'
+
+
+    //Retrofit
+    //implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    //Gson
+    //implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+
+    // ViewModel
+    implementation"androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+
+    //Glide
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+
+    //Corrutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.1"
+    //Lifecycle
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.4.0"
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.4.0"
+
+
+    //Volley
+    implementation "com.android.volley:volley:$volley_version"
+
+    implementation "com.google.code.gson:gson:$gson_version"
+
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
 
 }
